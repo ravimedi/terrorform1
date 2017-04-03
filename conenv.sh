@@ -43,11 +43,11 @@ git init &>/dev/null
 git pull $REPO $BRANCH &>/dev/null 
 
 ## Checking ENV
-if [ ! -f /ENV ]; then 
+if [ ! -f /ENVV ]; then 
 	Error "Server creation is not standard.. Cannot proceed"
 	exit 7
 fi
-ENV=$(cat /ENV)
+ENV=$(cat /ENVV)
 cd /opt/demo/$ENV
 
 ##### Setting chef-solo requirement
