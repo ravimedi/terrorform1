@@ -61,5 +61,5 @@ echo "cookbook_path [ \"$COOKBOOK_PATH\" ]" > $COOKBOOK_PATH/solo.rb
 
 #### Applying CookBooks
 cd $COOKBOOK_PATH
-chef-solo -c solo.rb -o recipe[tomcat::default]
+chef-solo -c solo.rb -o recipe[httpd::default]
 
